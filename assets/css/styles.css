@@ -1,4 +1,4 @@
-/*--------------------------------------------
+--------------------------------------------
 
     Template Name: srtdash - Bootstrap 4 Admin and Ui Kit
     Template URI: http://tf.itech-theme.com/srtdash-preview
@@ -53,6 +53,75 @@
 
 
 /*------------------------- 1. Core Css -------------------*/
+#blah 
+{
+    border-radius: 200px;
+}
+#form-border tr td {
+    border-top: none!important;
+}
+/*input {
+  font-size: 20px;
+  height:50px;
+}*/
+.imagediv {
+    float:left;
+    margin-top:50px;
+}
+.imagediv .showonhover {
+    background:red;
+    padding:20px;
+    opacity:0.9;
+    color:white;
+    width: 100%;
+    display:block;  
+    text-align:center;
+    cursor:pointer;
+}
+
+/*upload image start*/
+
+.profile-pic {
+     border-radius: 200px;
+}
+
+.file-upload {
+    display: none;
+}
+.circle {
+    /*border-radius: 1000px !important;*/
+    /*overflow: hidden;*/
+    /*width: 128px;*/
+    /*height: 128px;*/
+    /*border: 8px solid rgba(255, 255, 255, 0.7);*/
+    /*position: absolute;*/
+    /*top: 72px;*/
+}
+ 
+.p-image {
+  position: absolute;
+  top: 112px;
+  /*right: 30px;*/
+  color: #666666;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  width: 12%;
+}
+.p-image:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.upload-button {
+  font-size: 1.2em;
+  /*transform: translateY(-90px)*/
+}
+
+.upload-button:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  color: #999;
+}
+/*upload image end*/
+
+
+
 
 .page-container {
     width: 100%;
@@ -2827,4 +2896,4 @@ table.dataTable thead td {
     color: #555;
 }
 
-/*-------------------- END Offset Sidebar ------------------- */
+/*-------------------- END Offset Sidebar ------------------- 

@@ -6,21 +6,29 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Upload Profile</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/plugin.js"></script>
-    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
-
-    
-    <!-- <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico"> -->
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+     <!-- style css -->
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/metisMenu.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/slicknav.min.css">
+
+    
+    
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/
+    jquery-ui.css" rel="stylesheet" type="text/css" />
+    
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+    </script>
+    
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/
+    jquery-ui.min.js"></script>
+
+
     <!-- amcharts css -->
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
     <!-- Start datatable css -->
@@ -28,12 +36,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.jqueryui.min.css">
-    <!-- style css -->
-    <link rel="stylesheet" href="assets/css/typography.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- modernizr css -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="img-upload/plugin.js"></script>
     <script type="text/javascript" src="assets/js/validate.js"></script>
 </head>
 
@@ -52,8 +59,22 @@
 
                 <tr>
                     <td>
-                        <center><img id="blah" width="60" src="image/local.jpg" alt="your image" />
-                            <input type='file' onchange="readURL(this);" />
+                        <center>
+   <div class="small-12 medium-2 large-2 columns">
+     <div class="circle">
+       <!-- User Profile Image -->
+       <img class="profile-pic" width="80" src="assets/images/local.jpg">
+
+       <!-- Default Image -->
+       <!-- <i class="fa fa-user fa-5x"></i> -->
+     
+     <div class="p-image">
+       <i class="fa fa-camera upload-button"></i>
+        <input class="file-upload" type="file" accept="image/*"/>
+     </div>
+  </div>
+</div>
+
                         </center>
                     </td>
                 </tr>
@@ -205,6 +226,9 @@
             </div>
         </div>
     </div>
+
+
+
 
     <!-- jquery latest version -->
     <script src="assets/js/bootstrap.min.js"></script>
