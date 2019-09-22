@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upload Profile</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/plugin.js"></script>
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
+    
+    <!-- <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico"> -->
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/metisMenu.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <!-- amcharts css -->
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <!-- Start datatable css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.jqueryui.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="assets/js/validate.js"></script>
+</head>
+
+<body>
+
+    <section class="main-container">
+        <form action="#" name="StudentRegistration" onsubmit="return(validate());">
+
+            <table cellpadding="2" id="form-border" width="20%" bgcolor="#f0f8ff" align="center" cellspacing="2">
+
+                <tr>
+                    <td colspan=2>
+                        <center><font size=4><b>Student Registration Form</b></font></center>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <center><img id="blah" width="60" src="image/local.jpg" alt="your image" />
+                            <input type='file' onchange="readURL(this);" />
+                        </center>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>First Name
+                        <input type=text name="textnames" id="textname" size="30">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Last Name
+                        <input type="text" name="lastname" id="lastname" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email-id
+                        <input type="text" name="emailid" id="emailid" size="30">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>MobileNo
+                        <input type="text" name="mobileno" id="mobileno" size="30">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Hobbies
+                        <input type="text" name="Hobbies" id="Hobbies" size="30">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Sex :
+                        <input id="msex" type="radio" name="sex" value="male" size="10">Male
+                        <input id="fsex" type="radio" name="sex" value="Female" size="10">Female</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit Form" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <!-- page title area end -->
+    <div class="main-content-inner">
+        <div class="row">
+            <!-- Dark table start -->
+            <div class="col-12 mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="header-title">User Data Table </h4>
+                        <div class="data-tables datatable-dark">
+                            <table id="dataTable3" class="text-center">
+                                <thead class="text-capitalize">
+                                    <tr>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Email-id</th>
+                                        <th>Mobile no.</th>
+                                        <th>Hobbies</th>
+                                        <th>Sex</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- <tr>
+                                        <td><p id="FirstName12"  name="FirstName12"></p></td>
+                                        <td><p id="lastname12"  name="lastname12"></p></td>
+                                        <td><p id="emailid12"  name="emailid12"></p></td>
+                                        <td><p id="mobileno12"  name="mobileno12"></p></td>
+                                        <td><p id="Hobbies12"  name="Hobbies12"></p></td>
+                                        <td><p id="sex12"  name="sex12"></p></td>
+                                    </tr> -->
+                                    <tr>
+                                        <td>Angelica Ramos</td>
+                                        <td>Chief Executive Officer (CEO)</td>
+                                        <td>London</td>
+                                        <td>47</td>
+                                        <td>2009/10/09</td>
+                                        <td>$1,200,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Angelica Ramos</td>
+                                        <td>Chief Executive Officer (CEO)</td>
+                                        <td>London</td>
+                                        <td>47</td>
+                                        <td>2009/10/09</td>
+                                        <td>$1,200,000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bradley Greer</td>
+                                        <td>Software Engineer</td>
+                                        <td>London</td>
+                                        <td>41</td>
+                                        <td>2012/10/13</td>
+                                        <td>$132,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brenden Wagner</td>
+                                        <td>Software Engineer</td>
+                                        <td>San Francisco</td>
+                                        <td>28</td>
+                                        <td>2011/06/07</td>
+                                        <td>$206,850</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Caesar Vance</td>
+                                        <td>Pre-Sales Support</td>
+                                        <td>New York</td>
+                                        <td>29</td>
+                                        <td>2011/12/12</td>
+                                        <td>$106,450</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Caesar Vance</td>
+                                        <td>Pre-Sales Support</td>
+                                        <td>New York</td>
+                                        <td>29</td>
+                                        <td>2011/12/12</td>
+                                        <td>$106,450</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bruno Nash</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>21</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433,060</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery latest version -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+     
+    <!-- Start datatable js -->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
+    <!-- others plugins -->
+    <script src="assets/js/scripts.js"></script>
+     <script>
+//         function validate() {
+//   var table = document.getElementById("dataTable3");
+//   var row = table.insertRow();
+//   var cell1 = row.insertCell(0);
+//   var cell2 = row.insertCell(1);
+//   var cell3 = row.insertCell(2);
+//   var cell4 = row.insertCell(3);
+//   var cell5 = row.insertCell(4);
+//   var cell6 = row.insertCell(5);
+
+//   cell1.innerHTML = document.getElementById("textname");
+//   cell2.innerHTML = document.getElementById("lastname");
+//   cell3.innerHTML = document.getElementById("emailid");
+//   cell4.innerHTML = document.getElementById("mobileno");
+//   cell5.innerHTML = document.getElementById("Hobbies");
+//   cell6.innerHTML = document.getElementById("msex");
+//   cell6.innerHTML = document.getElementById("fsex");
+// }
+</script>
+</body>
+
+</html>
