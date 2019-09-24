@@ -1,10 +1,9 @@
-//<script type="text/javascript">
 function validate()
 { 
-   if( document.StudentRegistration.textnames.value == "" )
+   if( document.StudentRegistration.textname.value == "" )
    {
      alert( "Please provide your Name!" );
-     document.StudentRegistration.textnames.focus() ;
+     document.StudentRegistration.textname.focus() ;
      return false;
    }
    if( document.StudentRegistration.lastname.value == "" )
@@ -45,6 +44,21 @@ function validate()
    alert ( "Please choose your Gender: Male or Female" );
    return false;
    } 
-   return( true );
+ var table = document.getElementById("dataTable3");
+  var row = table.insertRow();
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  var cell4 = row.insertCell(3);
+  var cell5 = row.insertCell(4);
+  var cell6 = row.insertCell(5);
+
+  cell1.innerHTML = document.getElementById("textname").value;
+  cell2.innerHTML = document.getElementById("lastname").value;
+  cell3.innerHTML = document.getElementById("emailid").value;
+  cell4.innerHTML = document.getElementById("mobileno").value;
+  cell5.innerHTML = document.getElementById("Hobbies").value;
+  cell6.innerHTML = document.getElementById("msex").value;
+   return true ;
 } 
-//</script>
+ 
