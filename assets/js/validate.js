@@ -59,6 +59,9 @@ function validate()
   cell4.innerHTML = document.getElementById("mobileno").value;
   cell5.innerHTML = document.getElementById("Hobbies").value;
   cell6.innerHTML = document.getElementById("msex").value;
+
+   var c = document.getElementById("dataTable3").rows.length;
+   document.getElementById("demo").innerHTML = "Total numbers of rows in table:  " + c;
    return true ;
 } 
  
